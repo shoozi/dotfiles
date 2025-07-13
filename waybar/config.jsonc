@@ -192,7 +192,7 @@
         "on-click": "pavucontrol -t 3",
         "on-click-middle": "volumecontrol.sh -o m",
         "tooltip-format": "{icon} {desc} // {volume}%",
-        "scroll-step": 2,
+        "scroll-step": 1,
         "format-icons": {
             "headphone": "",
             "hands-free": "",
