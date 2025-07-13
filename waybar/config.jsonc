@@ -191,10 +191,10 @@
         "format-muted": " ",
         "on-click": "pavucontrol -t 3",
         "on-click-middle": "volumecontrol.sh -o m",
-        "on-scroll-up": "pactl set-sink-volume @DEFAULT_SINK@ +5",
-        "on-scroll-down": "pactl set-sink-volume @DEFAULT_SINK@ -5%",
+        "on-scroll-up": "pactl set-sink-volume @DEFAULT_SINK@ +1",
+        "on-scroll-down": "pactl set-sink-volume @DEFAULT_SINK@ -1%",
         "tooltip-format": "{icon} {desc} // {volume}%",
-        "scroll-step": 5,
+        "scroll-step": 1,
         "format-icons": {
             "headphone": "",
             "hands-free": "",
