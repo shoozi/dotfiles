@@ -23,7 +23,7 @@ fi
 
 #
 # Aliases
-alias backuphome='sudo rsync -aAXv /home/shoozi/ /run/media/shoozi/Dreamin/andromeda\ backup/ && pacman -Qqe > /run/media/shoozi/Dreamin/andromeda\ backup'
+alias backuphome='sudo rsync -aAXv /home/shoozi/ /run/media/shoozi/Dreamin/andromeda\ backup/ && pacman -Qqe > /run/media/shoozi/Dreamin/andromeda\ backup/pkglist.md'
 
 # Alias ls utils to show color
 alias ls='ls --color=auto'
