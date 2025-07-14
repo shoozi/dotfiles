@@ -23,7 +23,7 @@ fi
 
 #
 # Aliases
-alias backuphome="~/scripts/homeBackup.zsh"
+alias backuphome="~/.bin/homeBackup.zsh"
 
 # Alias ls utils to show color
 alias ls='ls --color=auto'
