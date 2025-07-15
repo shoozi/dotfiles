@@ -1,5 +1,5 @@
 return {
-  -- add theme
+  -- add theme 
   {
     "catppuccin/nvim",
     opts = {
@@ -15,4 +15,3 @@ return {
     },
   },
 }
-
