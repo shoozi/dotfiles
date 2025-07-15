@@ -1,0 +1,7 @@
+ani-cli
+anki
+manga-tui
+vlc-git
+wlogout
+yay
+yay-debug
