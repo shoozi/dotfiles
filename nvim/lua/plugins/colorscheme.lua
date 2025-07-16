@@ -1,5 +1,5 @@
 return {
-  -- add theme 
+  
   {
     "catppuccin/nvim",
     opts = {
@@ -7,11 +7,11 @@ return {
     },
   },
 
-  -- add theme to LazyVim
   {
     "LazyVim/LazyVim",
     opts = {
       colorscheme = "catppuccin",
     },
   },
+
 }
