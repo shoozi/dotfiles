@@ -1,6 +1,7 @@
 ani-cli
 anki
 manga-tui
+mangal-bin
 vlc-git
 wlogout
 yay

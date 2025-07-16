@@ -8,6 +8,7 @@ base-devel
 brightnessctl
 btop
 cava
+clang
 cliphist
 discord
 dolphin
@@ -29,6 +30,9 @@ hyprpicker
 hyprpolkitagent
 imv
 intel-ucode
+interception-caps2esc
+interception-tools
+jdk-openjdk
 kitty
 konsole
 less
@@ -70,11 +74,13 @@ libretro-yabause
 linux
 linux-firmware
 manga-tui
+mangal-bin
 neovim
 networkmanager
 nodejs
 noto-fonts-cjk
 noto-fonts-emoji
+npm
 obsidian
 openssh
 pipewire
@@ -88,11 +94,13 @@ retroarch-assets-ozone
 retroarch-assets-xmb
 rofi-wayland
 rsync
+ruby
 slurp
 sof-firmware
 spotify-launcher
 steam
 swww
+tmux
 ttf-fira-code
 udiskie
 vlc-git
@@ -105,6 +113,9 @@ yay
 yay-debug
 yazi
 yt-dlp
+zathura
+zathura-cb
+zathura-pdf-mupdf
 zsh
 zsh-autosuggestions
 zsh-history-substring-search
