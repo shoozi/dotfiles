@@ -1,7 +1,12 @@
 ani-cli
 anki
+lobster-git
 manga-tui
 mangal-bin
+mov-cli
+paru
+paru-debug
+python-mov-cli-youtube
 vlc-git
 wlogout
 yay
