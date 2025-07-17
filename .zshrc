@@ -23,7 +23,7 @@ fi
 
 #
 # Aliases
-alias backuphome="~/.bin/homeBackup.zsh"
+alias backuphome="~/bin/homeBackup.zsh"
 alias vidl='yt-dlp -f "bv*+ba/best" -S "res:1080,ext:mp4"' 
 
 
