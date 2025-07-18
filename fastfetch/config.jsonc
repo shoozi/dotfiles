@@ -1,8 +1,9 @@
 {
   "logo": {
-    "source": "~/.dotfiles/fastfetch/images/power1.jpg",
+    "source": ".config/fastfetch/images/power.png",
+    "width": 25,
     "padding": {
-      "top": 2,
+      "top": 1,
       "right": 6
     }
   },
