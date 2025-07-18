@@ -26,6 +26,7 @@ fi
 alias backuphome="~/bin/homeBackup.zsh"
 alias vidl='yt-dlp --no-playlist -f "bv*+ba/best" -S "res:1080,ext:mp4"' 
 alias ytmp3='yt-dlp --no-playlist -x --audio-format mp3'
+alias chtheme="~/bin/themeChanger.zsh"
 
 
 # Alias ls utils to show color
