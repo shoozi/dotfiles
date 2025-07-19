@@ -1,13 +1,9 @@
-#!/bin/zsh
+#!/bin/zsh 
 
-#This script is used for backing up home directory and a list of explicitly instlaled packages
-
-#Home directory backup
-sudo rsync -aAXv /home/shoozi/ /run/media/shoozi/Dreamin/andromeda\ backup/
-
-#Pacman pkglist
-pacman -Qqe > /run/media/shoozi/Dreamin/andromeda\ backup/pkglist.txt
-
-#AUR pkglist
-pacman -Qqm > /run/media/shoozi/Dreamin/andromeda\ backup/aur-pkglist.txt
+USER_HOME="/home/shoozi/"
+BACKUP_DIR="/run/media/shoozi/Dreamin/archBackup"
+SYSTEM_BACKUP_DIR="$BACKUP_DIR/system"
+DOTFILES_DIR="$BACKUP_DIR/dotfiles"
+LOGFILE="$BACKUP_DIR/backup.log"
+EXCLUDES=(
 
