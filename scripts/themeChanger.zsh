@@ -14,10 +14,8 @@ fi
 
 # Set wallpaper
 if [[ -n $WALLPAPER && -f "$WALLPAPER" ]]; then
-  swww img "$WALLPAPER"
-  wal -i "$WALLPAPER" >/dev/null 2>&1
-  sleep 2
-  clear && fastfetch
+  swww img "$WALLPAPER" --transition-type any --transition-duration 1 --transition-fps 60
+  wal -i "$WALLPAPER"
 else
   echo "Wallpaper not found in $WALLPAPER"
 fi
@@ -25,6 +23,9 @@ fi
 # Update Fastfetch config to point to new logo
 if [[ -f "$LOGO" && -f "$FASTFETCH_CONFIG" ]]; then
   sed -i "s|\"source\": \".*\"|\"source\": \"$LOGO\"|" "$FASTFETCH_CONFIG"
+  sleep 0.3
+  clear
+  fastfetch
 else
   echo "Logo or Fastfetch config not found."
 fi
