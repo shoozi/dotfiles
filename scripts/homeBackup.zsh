@@ -82,4 +82,3 @@ pacman -Qqm > "$BACKUP_DIR/aurPkglist.txt"
 echo "=== Backup completed: $(date) ===" >> "$LOGFILE"
 echo "Wrote data to backup.log"
 echo "Backup completed"
->>>>>>> backupScript
