@@ -23,8 +23,7 @@ fi
 
 #
 # Aliases
-alias backuphome="~/.config/scripts/homeBackup.zsh"
-alias vidl='yt-dlp --no-playlist -f "bv*+ba/best" -S "res:1080,ext:mp4"' 
+alias vidown='yt-dlp --no-playlist -f "bv*+ba/best" -S "res:1080,ext:mp4"' 
 alias ytmp3='yt-dlp --no-playlist -x --audio-format mp3'
 alias chtheme="~/.config/scripts/themeChanger.zsh"
 
