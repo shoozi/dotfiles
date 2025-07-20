@@ -93,6 +93,7 @@ retroarch-assets-xmb
 rofi-wayland
 rsync
 slurp
+sof-firmware
 spotify-launcher
 swww
 tmux
