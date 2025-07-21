@@ -5,6 +5,7 @@ anki
 apache
 base
 base-devel
+blueman
 bluetui
 bluez
 bluez-utils
@@ -15,7 +16,6 @@ clang
 cliphist
 discord
 dolphin
-dunst
 efibootmgr
 fastfetch
 firefox
@@ -84,6 +84,7 @@ npm
 obsidian
 openssh
 os-prober
+pacman-contrib
 pavucontrol
 pipewire
 pipewire-alsa
@@ -99,6 +100,7 @@ rsync
 slurp
 sof-firmware
 spotify-launcher
+swaync
 swww
 tmux
 ttf-fira-code
