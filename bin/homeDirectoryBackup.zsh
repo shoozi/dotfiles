@@ -14,7 +14,8 @@ EXCLUDES=(
 )
 
 if ! mountpoint -q /backup; then
-    echo "Backup destination not found. Aborting backup process."
+    echo "Backup destination not found."
+    echo "Aborting backup process."
     exit 1
 fi
 
