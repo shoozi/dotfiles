@@ -71,6 +71,7 @@ libretro-snes9x
 libretro-yabause
 linux
 linux-firmware
+man-db
 manga-tui
 mangal-bin
 neovim
@@ -78,6 +79,7 @@ networkmanager
 nodejs
 noto-fonts-cjk
 noto-fonts-emoji
+npm
 obsidian
 openssh
 os-prober
