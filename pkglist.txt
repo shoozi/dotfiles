@@ -8,14 +8,12 @@ base-devel
 bluetui
 bluez
 bluez-utils
-bridge-utils
 brightnessctl
 btop
 cava
 clang
 cliphist
 discord
-dnsmasq
 dolphin
 dunst
 efibootmgr
@@ -25,6 +23,7 @@ git
 github-cli
 grim
 grub
+hyfetch
 hypridle
 hyprland
 hyprlock
@@ -71,7 +70,6 @@ libretro-scummvm
 libretro-shaders-slang
 libretro-snes9x
 libretro-yabause
-libvirt
 linux
 linux-firmware
 man-db
@@ -84,7 +82,6 @@ noto-fonts-cjk
 noto-fonts-emoji
 npm
 obsidian
-openbsd-netcat
 openssh
 os-prober
 pavucontrol
@@ -92,7 +89,6 @@ pipewire
 pipewire-alsa
 pipewire-pulse
 python-pywal
-qemu-full
 qt5-wayland
 retroarch
 retroarch-assets-glui
@@ -106,8 +102,6 @@ spotify-launcher
 swww
 tmux
 ttf-fira-code
-virt-manager
-virt-viewer
 vlc-git
 waybar
 wireplumber
