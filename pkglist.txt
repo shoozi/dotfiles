@@ -21,6 +21,7 @@ fastfetch
 firefox
 git
 github-cli
+googler
 grim
 grub
 gvfs
