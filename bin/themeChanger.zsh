@@ -24,6 +24,7 @@ fi
 if [[ -f "$LOGO" && -f "$FASTFETCH_CONFIG" ]]; then
   sed -i "s|\"source\": \".*\"|\"source\": \"$LOGO\"|" "$FASTFETCH_CONFIG"
   sleep 0.3
+  swaync-client -rs
   clear
   fastfetch
 else

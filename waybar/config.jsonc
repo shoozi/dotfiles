@@ -13,8 +13,8 @@
     ],
     "modules-right": [
         "mpris",
-        "battery",
         "group/perf",
+        "battery",
         "group/configs",
         "custom/control-center"
     ],
@@ -170,7 +170,7 @@
             "warning": 30,
             "critical": 20
         },
-        "format": "{icon}",
+        "format": "{capacity}% {icon}",
         "format-charging": "{capacity}% 󰂄",
         "format-plugged": "{capacity}% 󰂄 ",
         "format-alt": "{time} {icon}",
@@ -181,8 +181,7 @@
             "󰂀",
             "󰂂",
             "󰁹"
-        ],
-        "tooltip-format": "{capacity}%"
+        ]
     },
     "custom/pacman": {
         "format": "{} 󰚰",

@@ -23,6 +23,7 @@ git
 github-cli
 grim
 grub
+gvfs
 hyfetch
 hypridle
 hyprland
