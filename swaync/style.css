@@ -72,7 +72,7 @@
     padding-right:10px;
 }
 
-.control-center .notification-row .notification-background .notification..notification-content image,
+.control-center .notification-row .notification-background .notification .notification-content image,
 .control-center .notification-row .notification-background .notification.normal .notification-content image,
 .floating-notifications.background .notification-background .notification.low .notification-content image,
 .floating-notifications.background .notification-background .notification.normal .notification-content image {
@@ -184,8 +184,9 @@
 .control-center {
     background: @bg;
     color: @text;
-    border: solid 2px alpha(@foregroundCol, 1.0);
+    border: solid 2px @main-color;
     box-shadow: 0px 0px 5px black;
+    border-radius: 3px;
 }
 
 .title > button {
@@ -197,7 +198,8 @@
     margin:unset;
     color: @text;
     padding-left:20px;
-    padding-top:20px;
+    padding-top:0px;
+    font-size: 16px;
 }
 
 .widget-title > button {
@@ -233,45 +235,42 @@
 }
 
 .widget-mpris {
-}
-.widget-mpris .widget-mpris-player {
-    padding: 12px;
-    margin: 12px 8px;
-    background-color: @mpris-album-art-overlay;
-    border-radius: 15;px;
-}
-.widget-mpris .widget-mpris-player button {
-    color:@text;
-    text-shadow: none;
-    border-radius: 3px;
-    border: none;
-    margin: 5px;
-    transition: all 0.5s ease;
-}
-.widget-mpris .widget-mpris-player button:not(.selected) {
     background: transparent;
-    border: 2px solid transparent;
+    margin: 0px;
 }
-.widget-mpris .widget-mpris-player button:hover {
-    border: 2px solid transparent;
+.widget-mpris-player {
+    background: transparent;
+    margin-top: 12px;
+    margin-right: 20px;
+    margin-left: 20px;
 }
 
-.widget-mpris .widget-mpris-player .widget-mpris-album-art {
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.75);
+.widget-mpris > box > button {
+    background: transparent;
+    margin: 0px;
+    padding: 0px;
 }
 
+.widget-mpris button {
+    background-color: transparent;
+    border-radius: 6px;
+    padding: 0px;
+    margin: 0px;
+}
+
+.widget-mpris button:hover {
+    background-color: @bg-hover;
+    color: @main-color;
+}
 .widget-mpris .widget-mpris-player .widget-mpris-title {
     font-weight: bold;
     font-size: 1rem;
 }
 
 .widget-mpris .widget-mpris-player .widget-mpris-subtitle {
-    font-size: 0.85rem;
+    font-size: 0.8rem;
 }
 
-.widget-mpris .widget-mpris-player > box > button:hover {
-    background-color: @mpris-button-hover;
-}
 .widget-buttons-grid {
     font-size: 20px;
 	font-family:"CodeNewRoman Nerd Font Propo";
@@ -279,15 +278,18 @@
     padding-right: 8px;
     padding-bottom: 8px;
     margin: 10px;
-    border-radius: 12px;
+    border-radius: 4px;
     background:transparent;
 	border: none;
 }
+
 .widget-buttons-grid > flowbox > flowboxchild > button {
     background: alpha(@color7, 1.0);
     text-shadow:none;
 	box-shadow: none;
     transition: all .5s ease;
+    border-radius: 3px;
+    margin: 0 2px 0 2px;
 }
 .widget-buttons-grid > flowbox > flowboxchild > button:hover {
     background: alpha(@main-color, 0.8);
@@ -296,6 +298,7 @@
 .widget-buttons-grid>flowbox>flowboxchild>button label {
     color: @color1;
     transition: all .5s ease;
+    margin: 0 2px 0 2px;
 }
 .widget-buttons-grid>flowbox>flowboxchild>button:hover label {
 	color: @color7;
@@ -354,8 +357,10 @@ trough slider:hover {
 .widget-volume {
     font-family:"CodeNewRoman Nerd Font Propo";
     background-color: transparent;
-    padding: 8px;
-    margin: 8px;
+    padding-left: 8px;
+    padding-right: 8px;
+    margin-right: 8px;
+    margin-left: 8px;
     border-radius: 12px;
 }
 .widget-backlight {
