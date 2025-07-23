@@ -22,7 +22,8 @@ wal -i "$WALLPAPER"
 sed -i 's|"type": "builtin"|"type": "file"|' "$FASTFETCH_CONFIG"
 sed -i "s|\"source\": \".*\"|\"source\": \"$MINARCH_PATH\"|" "$FASTFETCH_CONFIG"
 
-pkill -USR swaync
+killall swaync
+swaync &
 
 sleep 1
 

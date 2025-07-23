@@ -102,7 +102,6 @@
             "bluetooth",
             "pulseaudio#input",
             "pulseaudio#output",
-            "hyprland/language",
             "network"
         ]
     },
@@ -275,7 +274,7 @@
         "format": "{volume}% {icon}",
         "format-bluetooth": "󰂰",
         "format-bluetooth-muted": "{format_muted}",
-        "format-muted": "",
+        "format-muted": "󰝟",
         "format-icons": {
             "headphone": "",
             "headset": "",
@@ -290,11 +289,5 @@
         "tooltip-format": "{desc}",
         "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
         "on-click-right": "pavucontrol"
-    },
-    "hyprland/language": {
-        "format": "{} 󰌌",
-        "format-en": "EN",
-        "format-es": "ES",
-        "tooltip": true
     }
 }

@@ -18,6 +18,7 @@ discord
 dolphin
 efibootmgr
 fastfetch
+fd
 firefox
 git
 github-cli
