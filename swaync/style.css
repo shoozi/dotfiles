@@ -2,34 +2,38 @@
 @define-color mpris-album-art-overlay alpha(@background, 0.55);
 @define-color mpris-button-hover alpha(@background, 0.50);
 @define-color text @foreground;
-@define-color bg alpha(@background,.85);
-@define-color bg-hover alpha(@background,.95);
+@define-color bg alpha(@background, .85);
+@define-color bg-hover alpha(@background, .95);
 @define-color main-color @color1;
 
-@keyframes fadeIn{
-0% {
-    padding-left:20px;
-    margin-left:50px;
-    margin-right:50px;
+@keyframes fadeIn {
+    0% {
+        padding-left: 20px;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    100% {
+        padding: 0px;
+        margin: 0px;
+    }
 }
-100% {
-    padding:0px;
-    margin:0px;
-}
-}
+
 * {
-    outline:none;
+    outline: none;
 }
+
 .control-center .notification-row {
     background-color: unset;
 }
+
 .control-center .notification-row .notification-background .notification,
 .control-center .notification-row .notification-background .notification .notification-content,
 .floating-notifications .notification-row .notification-background .notification,
-.floating-notifications.background .notification-background .notification .notification-content {
-}
-.notification{
-    background: alpha(@main-color,.85);
+.floating-notifications.background .notification-background .notification .notification-content {}
+
+.notification {
+    background: alpha(@main-color, .85);
 
 }
 
@@ -39,9 +43,10 @@
     background: alpha(@main-color, .85);
 
 }
-.floating-notifications .notification{
+
+.floating-notifications .notification {
     animation: fadeIn .5s ease-in-out;
-	box-shadow: 0px 0px 3px black ;
+    box-shadow: 0px 0px 3px black;
 }
 
 .control-center .notification-row .notification-background .notification box,
@@ -53,9 +58,11 @@
     border-radius: 0.818rem;
 
 }
-.notification widget:hover{
-    background:alpha(@main-color,.2);
+
+.notification widget:hover {
+    background: alpha(@main-color, .2);
 }
+
 .floating-notifications.background .notification-background .notification .notification-content,
 .control-center .notification-background .notification .notification-content {
     padding-top: 0.818rem;
@@ -67,9 +74,9 @@
 .control-center .notification-row .notification-background .notification.normal .notification-content label,
 .floating-notifications.background .notification-background .notification.low .notification-content label,
 .floating-notifications.background .notification-background .notification.normal .notification-content label {
-    padding-top:10px;
-    padding-left:10px;
-    padding-right:10px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .control-center .notification-row .notification-background .notification .notification-content image,
@@ -106,7 +113,7 @@
 }
 
 .control-center .notification-row .notification-background .notification.critical .notification-content image,
-.floating-notifications.background .notification-background .notification.critical .notification-content image{
+.floating-notifications.background .notification-background .notification.critical .notification-content image {
     background-color: unset;
     color: #ffffff;
 
@@ -117,9 +124,11 @@
     color: #680003;
 
 }
-.notification-content{
-    padding:5px;
+
+.notification-content {
+    padding: 5px;
 }
+
 .control-center .notification-row .notification-background .notification .notification-content .summary,
 .floating-notifications.background .notification-background .notification .notification-content .summary {
     font-family: 'CodeNewRoman Nerd Font Propo';
@@ -147,7 +156,7 @@
 
 .control-center .notification-row .close-button,
 .floating-notifications.background .close-button {
-    all:unset;
+    all: unset;
     background-color: unset;
     border-radius: 0%;
     border: none;
@@ -159,13 +168,13 @@
     min-height: 20px;
     min-width: 20px;
     text-shadow: none;
-    color:@color2;
+    color: @color2;
     transition: all 0.3s ease;
-  }
+}
 
 .control-center .notification-row .close-button:hover,
 .floating-notifications.background .close-button:hover {
-    all:unset;
+    all: unset;
     background-color: @color2;
     border-radius: 100%;
     border: none;
@@ -177,34 +186,34 @@
     min-height: 20px;
     min-width: 20px;
     text-shadow: none;
-    color:@bg;
+    color: @bg;
     transition: all 0.3s ease;
 }
 
 .control-center {
     background: @bg;
     color: @text;
-    border: solid 2px @main-color;
+    border: solid 1px @main-color;
     box-shadow: 0px 0px 5px black;
     border-radius: 3px;
 }
 
-.title > button {
+.title>button {
     color: @background;
 }
 
 .widget-title {
-    padding:unset;
-    margin:unset;
+    padding: unset;
+    margin: unset;
     color: @text;
-    padding-left:20px;
-    padding-top:0px;
+    padding-left: 20px;
+    padding-top: 0px;
     font-size: 16px;
 }
 
-.widget-title > button {
-    padding:unset;
-    margin:unset;
+.widget-title>button {
+    padding: unset;
+    margin: unset;
     font-size: initial;
     color: @background;
     text-shadow: none;
@@ -212,17 +221,17 @@
     border: none;
     box-shadow: none;
     border-radius: 12px;
-    padding:0px 10px;
-    margin-right:20px;
-    margin-top:3px;
+    padding: 0px 10px;
+    margin-right: 20px;
+    margin-top: 3px;
     transition: all .7s ease;
 }
 
-.widget-title > button:hover {
+.widget-title>button:hover {
     border: none;
     color: @text;
     background: @color8;
-    transition: all 0.3s ease; 
+    transition: all 0.3s ease;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, .65);
 }
 
@@ -230,7 +239,7 @@
     margin: 8px;
 }
 
-.widget-label > label {
+.widget-label>label {
     font-size: 1.1rem;
 }
 
@@ -238,6 +247,7 @@
     background: transparent;
     margin: 0px;
 }
+
 .widget-mpris-player {
     background: transparent;
     margin-top: 12px;
@@ -245,7 +255,7 @@
     margin-left: 20px;
 }
 
-.widget-mpris > box > button {
+.widget-mpris>box>button {
     background: transparent;
     margin: 0px;
     padding: 0px;
@@ -262,6 +272,7 @@
     background-color: @bg-hover;
     color: @main-color;
 }
+
 .widget-mpris .widget-mpris-player .widget-mpris-title {
     font-weight: bold;
     font-size: 1rem;
@@ -273,52 +284,58 @@
 
 .widget-buttons-grid {
     font-size: 20px;
-	font-family:"CodeNewRoman Nerd Font Propo";
+    font-family: "CodeNewRoman Nerd Font Propo";
     padding-left: 8px;
     padding-right: 8px;
     padding-bottom: 8px;
     margin: 10px;
     border-radius: 4px;
-    background:transparent;
-	border: none;
+    background: transparent;
+    border: none;
 }
 
-.widget-buttons-grid > flowbox > flowboxchild > button {
+.widget-buttons-grid>flowbox>flowboxchild>button {
     background: alpha(@color7, 1.0);
-    text-shadow:none;
-	box-shadow: none;
+    text-shadow: none;
+    box-shadow: none;
     transition: all .5s ease;
     border-radius: 3px;
     margin: 0 2px 0 2px;
 }
-.widget-buttons-grid > flowbox > flowboxchild > button:hover {
+
+.widget-buttons-grid>flowbox>flowboxchild>button:hover {
     background: alpha(@main-color, 0.8);
     transition: all .5s ease;
 }
+
 .widget-buttons-grid>flowbox>flowboxchild>button label {
     color: @color1;
     transition: all .5s ease;
     margin: 0 2px 0 2px;
 }
+
 .widget-buttons-grid>flowbox>flowboxchild>button:hover label {
-	color: @color7;
-    transition: all .5s ease;
-}
-.widget-buttons-grid > flowbox > flowboxchild > button.toggle:checked {
-    background: @main-color;
-    transition: all .5s ease;
-	box-shadow: none;
-}
-.widget-buttons-grid > flowbox > flowboxchild > button.toggle:checked label {
     color: @color7;
     transition: all .5s ease;
 }
-.widget-menubar > box > .menu-button-bar > button {
+
+.widget-buttons-grid>flowbox>flowboxchild>button.toggle:checked {
+    background: @main-color;
+    transition: all .5s ease;
+    box-shadow: none;
+}
+
+.widget-buttons-grid>flowbox>flowboxchild>button.toggle:checked label {
+    color: @color7;
+    transition: all .5s ease;
+}
+
+.widget-menubar>box>.menu-button-bar>button {
     border: none;
     background: transparent;
 }
 
-.topbar-buttons > button {
+.topbar-buttons>button {
     border: none;
     background: transparent;
 }
@@ -335,6 +352,7 @@ trough highlight {
     box-shadow: 0px 0px 5px rgba(0, 0, 0, .5);
     transition: all .7s ease;
 }
+
 trough highlight:hover {
     padding: 5px;
     background: @foreground;
@@ -345,17 +363,18 @@ trough highlight:hover {
 
 trough slider {
     background: @main-color;
-	box-shadow: 0px 0px 0px 2px @foreground;
+    box-shadow: 0px 0px 0px 2px @foreground;
     transition: all .5s ease;
 }
+
 trough slider:hover {
     background: @main-color;
-	box-shadow: 0px 0px 0px 4px @foreground;
+    box-shadow: 0px 0px 0px 4px @foreground;
     transition: all .5s ease;
 }
 
 .widget-volume {
-    font-family:"CodeNewRoman Nerd Font Propo";
+    font-family: "CodeNewRoman Nerd Font Propo";
     background-color: transparent;
     padding-left: 8px;
     padding-right: 8px;
@@ -363,10 +382,10 @@ trough slider:hover {
     margin-left: 8px;
     border-radius: 12px;
 }
+
 .widget-backlight {
     background-color: transparent;
     padding: 8px;
     margin: 8px;
     border-radius: 12px;
 }
-

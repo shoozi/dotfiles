@@ -84,6 +84,7 @@ nodejs
 noto-fonts-cjk
 noto-fonts-emoji
 npm
+obs-studio
 obsidian
 openssh
 os-prober
