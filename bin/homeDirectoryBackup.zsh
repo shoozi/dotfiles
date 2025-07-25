@@ -5,7 +5,6 @@ SRC="/home/shoozi/"
 DEST="/backup/arch"
 EXCLUDES=(
   ".cache/"
-  ".dotfiles/"
   ".pki/"
   ".zcompdump"
   ".cargo/registry/"

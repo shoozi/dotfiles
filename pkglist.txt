@@ -114,6 +114,7 @@ wireplumber
 wl-clipboard
 wlogout
 xdg-desktop-portal-hyprland
+xdg-user-dirs
 yay
 yay-debug
 yazi
